@@ -3,13 +3,13 @@ import os
 print("*** This tool is designed by 'https://github.com/spiritofthenight' for automating deleting Powershell logs in windows ! ***\n")
 
 def PowerSmoke() :
-    ppath = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "PowerShell", "PSReadLine") # for windows 10 and 11
+    ppath = os.path.join(os.environ["APPDATA"], "Microsoft", "Windows", "PowerShell", "PSReadLine") # path for powershell history in windows 8, 8.1 , 10 and 11
 
     os.chdir(ppath)
 
     for file in os.listdir():
         os.remove(file)
-    print("Hell yea ! all Powershell logs are gone for good!\n")
+    print("all Powershell logs/history are gone for good!\n**Remember they will appear again whenever you use powershell !\n make sure you run this tool again after using powershell each time ! for no log saved locally ! **\n")
 
 def main():
     while True:
