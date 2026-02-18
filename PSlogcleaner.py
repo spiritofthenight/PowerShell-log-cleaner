@@ -1,5 +1,9 @@
 import os
 
+if os.name != 'nt'
+    print("this app is only designed for windows !")
+    exit()
+
 print("*** This tool is designed by 'https://github.com/spiritofthenight' for automating deleting Powershell logs in windows ! ***\n")
 
 def PowerSmoke() :
